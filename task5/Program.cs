@@ -1,8 +1,13 @@
-﻿Console.Write("Введите трехзначиное число ");
- int numbers = int.Parse(Console.ReadLine());
- Console.WriteLine(numbers);
-
- int a = numbers / 100;
- int b = numbers % 10;
- int c = numbers / 10 % 10;
- Console.WriteLine(c);
+﻿Console.Write("Введите число от 1 до 7: ");
+int N = int.Parse(Console.ReadLine());
+if ((N >= 1) && (N <=7))
+{
+    if (N == 6 || N == 7)
+    {
+        Console.WriteLine("YES");
+    }
+    else
+    {
+        Console.WriteLine("NO");
+    }
+}
